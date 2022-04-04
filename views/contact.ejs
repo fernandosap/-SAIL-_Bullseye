@@ -73,7 +73,7 @@
                 <br>
                 <div class="row">
                     <!-- Map Column -->
-                    <div class="col-lg-8 mb-4 contact-left">
+                    <div class="col-lg-6 mb-6 contact-left">
                         <h3>Send us a Message</h3>
                         <form name="sentMessage" id="contactForm" novalidate>
                             <div class="control-group form-group">
@@ -109,7 +109,7 @@
                         </form>
                     </div>
                     <!-- Contact Details Column -->
-                    <div class="col-lg-4 mb-4 contact-right">
+                    <div class="col-lg-6 mb-6 contact-right">
                         <h3>Contact Details</h3>
                         <p>
                             145 London
@@ -126,14 +126,14 @@
                         <p>
                             <abbr title="Hours">H</abbr>: Monday - Friday: 9:00 AM to 5:00 PM
                         </p>
+                        <br>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2488.568025565384!2d-0.29457178398268064!3d51.41099147961939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760be7e01840fd%3A0xfa8fd85e581dc4c1!2sChichester%20House%2C%20145%20London%20Rd%2C%20Kingston%20upon%20Thames%20KT2%206SR%2C%20UK!5e0!3m2!1sen!2smx!4v1649107991939!5m2!1sen!2smx" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" height="60%" width="80%"></iframe>
                     </div>
                 </div>
 
                 <br>
-                <div class="map-main">
-                    <!-- Embedded Google Map -->
-                    <iframe width="100%" height="300px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?hl=en&amp;ie=UTF8&amp;ll=37.0625,-95.677068&amp;spn=56.506174,79.013672&amp;t=m&amp;z=4&amp;output=embed"></iframe>
-                </div>
+                <!-- Map Section -->
+        <!-- End Map Section -->
                 <!-- /.row -->
             </div>
             <!-- /.container -->
@@ -155,69 +155,11 @@
         <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
         <script src="js/custom.js"></script>
         <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
-        <script type="text/javascript">
-            $(document).ready(function () {
-                $("#sidebar").mCustomScrollbar({
-                    theme: "minimal"
-                });
 
-                $('#dismiss, .overlay').on('click', function () {
-                    $('#sidebar').removeClass('active');
-                    $('.overlay').removeClass('active');
-                });
-
-                $('#sidebarCollapse').on('click', function () {
-                    $('#sidebar').addClass('active');
-                    $('.overlay').addClass('active');
-                    $('.collapse.in').toggleClass('in');
-                    $('a[aria-expanded=true]').attr('aria-expanded', 'false');
-                });
-            });
-        </script>
-
-        <script>
-            $(document).ready(function () {
-                $(".fancybox").fancybox({
-                    openEffect: "none",
-                    closeEffect: "none"
-                });
-
-                $(".zoom").hover(function () {
-
-                    $(this).addClass('transition');
-                }, function () {
-
-                    $(this).removeClass('transition');
-                });
-            });
-        </script>
-        <script>
-            // This example adds a marker to indicate the position of Bondi Beach in Sydney,
-            // Australia.
-            function initMap() {
-                var map = new google.maps.Map(document.getElementById('map'), {
-                    zoom: 11,
-                    center: {
-                        lat: 40.645037,
-                        lng: -73.880224
-                    },
-                });
-
-                var image = 'images/maps-and-flags.png';
-                var beachMarker = new google.maps.Marker({
-                    position: {
-                        lat: 40.645037,
-                        lng: -73.880224
-                    },
-                    map: map,
-                    icon: image
-                });
-            }
-        </script>
-        <!-- google map js -->
-        <script
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8eaHt9Dh5H57Zh0xVTqxVdBFCvFMqFjQ&callback=initMap"></script>
-        <!-- end google map js -->
+        <!--Google Map APi Key-->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2uu6KHbLc_y7fyAVA4dpqSVM4w9ZnnUw"></script>
+<script src="js/map-script.js"></script>
+<!--End Google Map APi-->
 </body>
 
 </html>
